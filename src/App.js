@@ -4,7 +4,7 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { Menu, MenuItem, TextField, Button, Container, Grid, Chip, AppBar, Tab, Tabs, Box } from '@material-ui/core';
 import './App.css';
 
-const creds = require('./credentials.json')
+//const creds = require('./credentials.json')
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
