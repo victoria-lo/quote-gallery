@@ -71,8 +71,8 @@ function App() {
 
       // Initialize Auth
       await doc.useServiceAccountAuth({
-        client_email: process.env.CLIENT_EMAIL,
-        private_key: process.env.PRIVATE_KEY,
+        client_email: process.env.REACT_APP_CLIENT_EMAIL,
+        private_key: process.env.REACT_APP_PRIVATE_KEY,
       });
 
       // loads document properties and worksheets
@@ -96,8 +96,8 @@ function App() {
 
     // Initialize Auth
     await doc.useServiceAccountAuth({
-    client_email: process.env.CLIENT_EMAIL,
-    private_key: process.env.PRIVATE_KEY,
+    client_email: process.env.REACT_APP_CLIENT_EMAIL,
+    private_key: process.env.REACT_APP_PRIVATE_KEY,
     });
 
     // loads document properties and worksheets
