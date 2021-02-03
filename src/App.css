@@ -21,3 +21,9 @@
   background-color: rgb(255, 255, 255);
   color:black;
 }
+
+.MuiButton-label{
+  justify-content: start !important;
+  font-size:medium;
+  
+}
