@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { Menu, MenuItem, TextField, Button, Container, Grid, Chip, AppBar, Tab, Tabs, Box } from '@material-ui/core';
 import './App.css';
+require('dotenv').config();
 
 //const creds = require('./credentials.json')
 
@@ -93,7 +94,6 @@ function App() {
 
   async function getSheet(){
     const doc = new GoogleSpreadsheet('1E8Gn22-c-je9q_JBQY7yfHDoBl9asFugSG79eiloQLQ');
-
     // Initialize Auth
     await doc.useServiceAccountAuth({
     client_email: process.env.REACT_APP_CLIENT_EMAIL,
