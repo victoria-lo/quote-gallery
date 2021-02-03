@@ -71,8 +71,8 @@ function App() {
 
       // Initialize Auth
       await doc.useServiceAccountAuth({
-      client_email: creds.client_email,
-      private_key: creds.private_key,
+        client_email: process.env.CLIENT_EMAIL,
+        private_key: process.env.creds.PRIVATE_KEY,
       });
 
       // loads document properties and worksheets
